@@ -11,7 +11,7 @@ body {
 }
 
 .ql-editor {
-    @apply bg-white min-h-[11.7in] border-none shadow-md overflow-x-hidden !important;
+    @apply bg-white min-h-[11.7in] border-none shadow-md overflow-x-hidden p-4 !important;
 }
 
 .ql-toolbar {

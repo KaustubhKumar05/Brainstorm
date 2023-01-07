@@ -1,11 +1,14 @@
+import { Route, Routes } from "react-router-dom";
 import TextEditor from "./TextEditor";
+import Home from "./Home";
 import "./App.css";
 
 function App() {
   return (
-    <div className="parent">
-      <TextEditor />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/doc/:slug" element={<TextEditor />} />
+    </Routes>
   );
 }
 
