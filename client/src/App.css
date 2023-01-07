@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-slate-100;
+}
+
+.parent {
+    @apply m-2 min-h-screen mx-auto max-w-[850px];
+}
+
+.ql-editor {
+    @apply bg-white min-h-[11.7in] border-none shadow-md overflow-x-hidden !important;
+}
+
+.ql-toolbar {
+    @apply sticky top-0 z-20 bg-white flex justify-center border-none shadow-md !important;
+}
