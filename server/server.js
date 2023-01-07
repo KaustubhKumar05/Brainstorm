@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://127.0.0.1/brainstorm");
+mongoose.connect("mongodb://mongo:WoTcSuia2Wg2TxcxDU8J@containers-us-west-97.railway.app:6205");
 const Document = require("./Document");
 
 const io = require("socket.io")(4000, {

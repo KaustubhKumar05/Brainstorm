@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "srvr": "nodemon server.js -p 4000"
+    "build": "yarn srvr",
+    "srvr": "nodemon server.js"
   },
   "license": "ISC",
   "dependencies": {

@@ -7,7 +7,7 @@ body {
 }
 
 .parent {
-    @apply m-2 min-h-screen mx-auto max-w-[850px];
+    @apply m-2;
 }
 
 .ql-editor {
