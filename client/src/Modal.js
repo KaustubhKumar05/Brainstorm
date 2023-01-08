@@ -49,8 +49,11 @@ const Modal = () => {
               className="bg-typo-highlight hover:bg-white disabled:bg-typo-subtle rounded-full p-1.5 flex items-center justify-center"
               disabled={!userInput}
               onClick={() => {
+                const token = crypto.randomUUID();
                 setUserName(userInput);
-                setUserToken(crypto.randomUUID());
+                setUserToken(token);
+                localStorage.setItem("brainStormUserName", userInput);
+                localStorage.setItem("brainStormUserToken", token);
               }}
             >
               <ArrowRightIcon className="text-secondary-dark" />

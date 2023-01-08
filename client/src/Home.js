@@ -56,7 +56,7 @@ const Home = () => {
           </div>
         ) : null}
       </>
-      <div>
+      {/* <div>
         <p className="text-typo-highlight text-2xl w-max font-semibold mt-6 mb-2">
           Sharing and receiving access:
         </p>
@@ -82,7 +82,7 @@ const Home = () => {
             </span>
           </span>
         ) : null}
-      </div>
+      </div> */}
     </div>
   );
 };

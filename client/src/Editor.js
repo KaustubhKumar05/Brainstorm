@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Quill from "quill";
+import DocData from "./DocData";
 import { io } from "socket.io-client";
 import { useParams } from "react-router-dom";
 import "quill/dist/quill.snow.css";
@@ -16,7 +17,7 @@ const TOOLBAR_OPTIONS = [
   ["clean"],
 ];
 
-const TextEditor = () => {
+const Editor = () => {
   const { slug } = useParams();
   const wrapperRef = useRef();
   const [socket, setSocket] = useState();
@@ -90,24 +91,10 @@ const TextEditor = () => {
 
   return (
     <div className="m-2 flex justify-center relative">
-      <div className="w-80 fixed left-8 top-8 bg-white p-4 shadow-sm">
-        <input
-          type="text"
-          value="Click to edit title"
-          placeholder="Enter a name"
-          className="focus:border-none focus:outline-none"
-        />
-        <hr className="mt-2 mb-4" />
-        <textarea
-          maxLength={120}
-          placeholder="Add a short description"
-          className="w-full p-2 min-h-[100px] focus:outline-none"
-          style={{ resize: "none" }}
-        />
-      </div>
+      <DocData />
       <div ref={wrapperRef} className="max-w-[850px] self-center" />
     </div>
   );
 };
 
-export default TextEditor;
+export default Editor;
